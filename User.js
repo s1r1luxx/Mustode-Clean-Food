@@ -4,6 +4,7 @@ import "../Components/NAVBar.css"
 import "./User.css"
 
 import user_icon from '../Pictures/user.png'
+import box from '../Pictures/round-corner.png'
 
 function User() {
     const inputRef = useRef(null);
@@ -16,6 +17,8 @@ function User() {
         console.log(file);
         setImage(event.target.files[0]);
     };
+
+    const handleClick = useState("");
 
   return (
     <div><NAVBar/>
@@ -32,6 +35,17 @@ function User() {
                     style={{display: "none"}}>
                     </input>
                 </div>
+                <text>
+                    Username : ______________
+                </text>
+                <button1 onClick={handleClick} >
+                    <img src={box}></img>
+                    Change Password
+                </button1>
+                <button1 onClick={handleClick}>
+                    <img src={box}></img>
+                    Edit plan
+                </button1>
             </div>
         </div>
     </div>
