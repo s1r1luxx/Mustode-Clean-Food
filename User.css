@@ -1,0 +1,32 @@
+.container{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.image-upload-container{
+    border: 2px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.img-display-after{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.img-display-before{
+    height: 200px;
+    width: 200px;
+}
