@@ -6,6 +6,21 @@
     height: 90vh;
 }
 
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 35px;
+    color: #fff;
+    background: #d22000;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 93%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .image-upload-container{
     border: 2px;
     border-radius: 5px;

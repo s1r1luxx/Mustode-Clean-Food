@@ -42,11 +42,17 @@ function User() {
                     <img src={box}></img>
                     Change Password
                 </button1>
-                <button1 onClick={handleClick}>
+                <button2 onClick={handleClick}>
                     <img src={box}></img>
                     Edit plan
-                </button1>
+                </button2>
             </div>
+            
+        </div>
+        <div className="button">
+            <button3 onClick={handleClick}>
+                Back
+            </button3>
         </div>
     </div>
     )
