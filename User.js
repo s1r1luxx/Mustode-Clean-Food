@@ -2,11 +2,15 @@ import React, { useState, useRef } from 'react'
 import NAVBar from '../Components/NAVBar'
 import "../Components/NAVBar.css"
 import "./User.css"
+import { useNavigate } from 'react-router-dom'
+import "./Conf_Pass"
 
 import user_icon from '../Pictures/user.png'
 import box from '../Pictures/round-corner.png'
 
 function User() {
+    const navigate = useNavigate()
+
     const inputRef = useRef(null);
     const[image, setImage] = useState("");
     const handleImageClick = () =>{
@@ -38,7 +42,7 @@ function User() {
                 <text>
                     Username : ______________
                 </text>
-                <button1 onClick={handleClick} >
+                <button1 onClick={() => navigate('Conf_Pass')} >
                     <img src={box}></img>
                     Change Password
                 </button1>

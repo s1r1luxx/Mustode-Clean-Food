@@ -1,12 +1,15 @@
 import React ,{useState} from 'react'
 import NAVBar from '../Components/NAVBar'
-import "../Components/NAVBar.css"
-import "./Conf_Pass.css"
+import '../Components/NAVBar.css'
+import './Conf_Pass.css'
+import './User'
+import { useNavigate } from 'react-router-dom'
 
 import check from '../Pictures/check (1).png'
 
 function Conf_Pass() {
     const handleClick = useState("");
+    const navigate = useNavigate()
 
   return (
     <div><NAVBar/>
@@ -30,7 +33,7 @@ function Conf_Pass() {
             </div>
         </div>
         <div className="button_back">
-            <button1 onClick={handleClick}>
+            <button1 onClick={() => navigate(-1)}>
                 Back
             </button1>
             <div className="button_check">
