@@ -36,7 +36,7 @@ function Conf_Pass() {
             </div>
         </div>
         <div className="button_back">
-            <button1 onClick={handleClick}>
+            <button1 onClick={handleClick} className='button1'>
                 Back
             </button1>
             <div className="button_check">
